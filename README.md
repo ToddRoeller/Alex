@@ -1,6 +1,6 @@
 # Alex
 
-Static website for Alex McDonald Agency. Adapted from ToddRoeller/fiorini, preserving its layout and styling.
+Static website for Milestone Premier Insurance Services. Adapted from ToddRoeller/fiorini, preserving its layout and styling.
 
 ## Pages
 
