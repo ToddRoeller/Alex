@@ -39,7 +39,7 @@ body::before {
   background-size: 42px 42px;
 }
 a { color: var(--forest); text-underline-offset: 0.18em; }
-a:focus-visible, iframe:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+a:focus-visible, iframe:focus-visible { outline: 3px solid var(--forest); outline-offset: 4px; }
 .skip-link {
   position: fixed; top: 12px; left: 12px; z-index: 100;
   padding: 12px 18px; border-radius: 999px; color: white;
@@ -138,8 +138,8 @@ p { color: var(--muted); line-height: 1.75; }
 .floating-note { position: absolute; display: flex; flex-direction: column; max-width: 230px; padding: 16px 20px; border: 1px solid var(--line); border-radius: 20px; background: rgba(255,255,255,.94); box-shadow: var(--shadow-soft); backdrop-filter: blur(14px); }
 .floating-note strong { margin-bottom: 3px; color: var(--forest); }
 .floating-note span { color: var(--muted); font-size: .82rem; }
-.note-top { top: 18px; left: 3px; transform: rotate(-4deg); }
-.note-bottom { right: 0; bottom: 0; transform: rotate(1.5deg); }
+.note-top { top: -14px; left: 3px; transform: rotate(-4deg); }
+.note-bottom { right: 0; bottom: -60px; transform: rotate(1.5deg); }
 .value-strip { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); margin: 0 20px; overflow: hidden; border: 1px solid var(--line); border-radius: 26px; background: rgba(255,255,255,.82); box-shadow: 0 15px 35px rgba(28,66,139,.07); }
 .value-strip article { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: center; padding: 26px; }
 .value-strip article + article { border-left: 1px solid var(--line); }
@@ -301,3 +301,17 @@ sup { font-size: .55em; line-height: 0; }
   .button, .text-link span, .service-card { transition: none; }
   .service-card:hover { transform: none; }
 }
+
+/* Keep card content readable on narrow phones. */
+.about-card > *, .quote-layout > *, .support-grid > *, .site-footer > * { min-width: 0; }
+h1, h2, h3 { overflow-wrap: break-word; }
+.quote-prep a { overflow-wrap: anywhere; }
+.footer-fineprint { text-wrap: pretty; }
+@media (max-width: 620px) {
+  .nav-links .nav-cta { grid-column: 1 / -1; text-align: center; }
+  .nav-links a { min-height: 44px; display: flex; align-items: center; justify-content: center; }
+  .about-copy h2 { font-size: clamp(2rem, 9vw, 3rem); }
+  .hero-lead { text-wrap: pretty; }
+}
+
+.support-card a, .policy-layout a, .form-disclosure a { overflow-wrap: anywhere; }
