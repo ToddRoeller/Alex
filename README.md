@@ -12,6 +12,6 @@ Static website for Milestone Premier Insurance Services. Adapted from ToddRoelle
 
 No build step is required. GitHub Pages publishes from the main branch, root folder. The custom domain is https://milestonepremierins.com/; DNS is managed in Cloudflare.
 
-Contact: 209-259-0052 · amcdonald3@farmersagent.com
-2200 McHenry Ave, Ste C, Modesto, CA 95350
-CA License #0K31165. Licensed in California.
+Contact: 209-577-0800 · info@milestonepremierinsurance.com
+2200 McHenry Ave, Suite A, Modesto, CA 95350
+CA License #6020485. Licensed in California.
